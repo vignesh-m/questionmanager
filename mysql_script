@@ -1,0 +1,18 @@
+CREATE SCHEMA `questionmanager` ;
+
+CREATE  TABLE `questionmanager`.`Questions` (
+  `idQuestions` INT NOT NULL AUTO_INCREMENT ,
+  `strQuestions` VARCHAR(1000) NOT NULL ,
+  `active` INT NOT NULL ,
+  `idAnswer` INT,
+  `idBigBangQues` INT,
+  PRIMARY KEY (`idQuestions`) );
+
+CREATE  TABLE `questionmanager`.`Answers` (
+  `idAnswers` INT NOT NULL ,
+  `idAnswersSNO` INT NOT NULL ,
+  `answer` VARCHAR(1000) NOT NULL ,
+  `email` VARCHAR(45) NOT NULL ,
+  PRIMARY KEY (`idAnswers`, `idAnswersSNO`) );
+
+  
