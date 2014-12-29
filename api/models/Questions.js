@@ -21,7 +21,7 @@ module.exports = {
 
   		idBigBangQues:{
   			type:'integer',
-  			default:-1
+  			defaultsTo:-1
   		}
 
   	}
