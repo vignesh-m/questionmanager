@@ -1,5 +1,5 @@
 /**
-* Questions.js
+* Answers.js
 *
 * @description :: TODO: You might write a short summary of how this model works and what it represents here.
 * @docs        :: http://sailsjs.org/#!documentation/models
@@ -11,30 +11,25 @@ module.exports = {
 	autoUpdatedAt:false,
 	autoPK:false,
   	attributes: {
-
-  		idQuestions:{
+  		idAnswers:{
   			type:'integer',
   			autoIncrement:true,
   			primaryKey:true
   		},
 
-  		strQuestions:{
+  		idQuestions:{
+  			type:'integer',
+  			required:true
+  		},
+
+  		answer:{
   			type:'string',
-  			defaultsTo:''
-
+  			required:true
   		},
 
-  		active:{
-  			type:'integer',
-  			defaultsTo:1
-  		},
-
-  		idBigBangQues:{
-  			type:'integer',
-  			defaultsTo:-1
+  		email:{
+  			type:'string',
+  			required:true
   		}
-
   	}
 };
-
-	
