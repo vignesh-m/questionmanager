@@ -15,7 +15,7 @@ module.exports = {
   		},
 
   		active:{
-  			type:'boolean',
+  			type:'integer',
   			defaultsTo:true
   		},
 
