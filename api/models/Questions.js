@@ -6,9 +6,25 @@
 */
 
 module.exports = {
+	schema:true,
+  	attributes: {
+  		strQuestions:{
+  			type:'string',
+  			required:true
 
-  attributes: {
+  		},
 
-  }
+  		active:{
+  			type:'boolean',
+  			defaultsTo:true
+  		},
+
+  		idBigBangQues:{
+  			type:'integer',
+  			default:-1
+  		}
+
+  	}
 };
 
+	
